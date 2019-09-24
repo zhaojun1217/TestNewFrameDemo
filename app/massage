@@ -1,0 +1,16 @@
+aroute+jimu 常见问题汇总
+
+(1)
+app 的 application 中
+Router.registerComponent("com.example.testmodleone.testmodleonelike.TestModleOneAppLike");
+会控制是否加载出testmodleone中的fragment
+
+(2)
+当发现ClassNotFoundException: com.example.picpreview.picpreviewlike.PicPreviewAppLike
+在app的application中注册不到modle中的applike时
+看看引用model的主model的gradle.properties中是否添加了要引用的model
+
+(3)
+debug版本初次换成release版本时候,会报sign错误,这时候需要配置签名文件,配置过后可能还会找不到,在xxxbuild.gradle中
+buildTypes的release中加入 " signingConfig signingConfigs.xxx ", 使用上签名信息即可
+

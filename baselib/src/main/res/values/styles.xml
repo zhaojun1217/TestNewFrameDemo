@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Bcom.example.testmodleone.applicationtion theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme_2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@drawable/welcome</item>-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LoadingDialog" parent="Theme.AppCompat.Dialog">
+        <!-- dialog  宽度与屏幕比例-->
+        <item name="android:windowMinWidthMinor">80%</item>
+        <!-- dialog 背景颜色，默认是白色-->
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
+</resources>

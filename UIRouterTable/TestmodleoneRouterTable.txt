@@ -1,0 +1,10 @@
+auto generated, do not change !!!! 
+
+HOST : testmodleone
+
+测试的第一个activity
+/testOneModleActivity
+
+测试的第er个activity
+/TestTwoModleActivity
+

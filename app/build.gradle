@@ -1,0 +1,58 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.dd.comgradle'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'jasonniu'
+            keyPassword 'jason1573'
+            storeFile file('C:/Users/13345/android/workspace/jfffirm.jks')
+            storePassword 'jason1573'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.a13345.testnewframedemo"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "app"]
+            }
+        }
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+//    resourcePrefix "${project.name}_"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':basemcvlib')
+    implementation project(':basemvplib')
+    api 'com.alibaba:arouter-api:1.3.1'
+    //    annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+    annotationProcessor deps.jimu.router_anno_compiler
+    // xrecycleview
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+}
+combuild {
+    applicationName = 'com.example.a13345.testnewframedemo.appliction.AppApplication'
+    isRegisterCompoAuto = true
+}

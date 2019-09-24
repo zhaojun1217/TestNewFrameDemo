@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TestNewFrameDemo.iml" filepath="$PROJECT_DIR$/TestNewFrameDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselib/baselib.iml" filepath="$PROJECT_DIR$/baselib/baselib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basemcvlib/basemcvlib.iml" filepath="$PROJECT_DIR$/basemcvlib/basemcvlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basemvplib/basemvplib.iml" filepath="$PROJECT_DIR$/basemvplib/basemvplib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basereslib/basereslib.iml" filepath="$PROJECT_DIR$/basereslib/basereslib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/componentservice/componentservice.iml" filepath="$PROJECT_DIR$/componentservice/componentservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picpreview/picpreview.iml" filepath="$PROJECT_DIR$/picpreview/picpreview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testmodleone/testmodleone.iml" filepath="$PROJECT_DIR$/testmodleone/testmodleone.iml" />
+    </modules>
+  </component>
+</project>

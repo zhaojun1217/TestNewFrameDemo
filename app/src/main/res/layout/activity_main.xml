@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a13345.testnewframedemo.MainActivity"
+    tools:ignore="ResourceName">
+
+    <TextView
+        android:id="@+id/tvGo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="跳转下一个activity" />
+
+    <TextView
+        android:id="@+id/tvOpen"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/line_color_green"
+        android:gravity="center"
+        android:text="开启预览" />
+
+    <TextView
+        android:id="@+id/tvPreviewPic"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/line_color_green"
+        android:gravity="center"
+        android:text="预览图片" />
+
+    <TextView
+        android:id="@+id/tvClose"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/line_color_green"
+        android:gravity="center"
+        android:text="关闭预览" />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrvTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tbPager"
+        android:layout_below="@+id/tvClose" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tbPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BaseLib</string>
+    <string name="again_exit">再按一次退出程序</string>
+</resources>
